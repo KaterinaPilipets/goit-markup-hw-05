@@ -26,8 +26,8 @@
 
   --font-family-primary: "Roboto", sans-serif;
   --font-family-secondary: "Raleway", sans-serif;
-  /* --animetion-time-func: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  --animetion-time-func: 3s cubic-bezier(0.4, 0, 0.2, 1);
+  --animetion-time-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* --animetion-time-func: 3s cubic-bezier(0.4, 0, 0.2, 1); */
 }
 /* -- dropping-- */
 p,
@@ -134,9 +134,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
-/* .link {
-  text-decoration: none;
-} */
+
 .page-coteiner {
   display: flex;
   flex-wrap: wrap;
@@ -355,7 +353,6 @@ body {
   height: 100%;
   border-radius: 50%;
   transition: background-color var(--animetion-time-func);
-  /* background-color: tomato; */
 }
 
 .team .social-link:hover .icon,
@@ -398,7 +395,6 @@ body {
 
 .btn {
   padding: 6px 22px;
-  /* border: 1px solid var(--color-border-potfolio); */
   border: 0;
   border-radius: 4px;
   font-weight: 500;
@@ -452,7 +448,6 @@ body {
   overflow: hidden;
 }
 .portfolio-description {
-  /* content: ""; */
   position: absolute;
   top: 0;
   left: 0;
@@ -462,7 +457,6 @@ body {
   transform: translateY(100%);
   transition: transform var(--animetion-time-func),
     opacity var(--animetion-time-func);
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -569,6 +563,20 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: inherit;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* /modal */
