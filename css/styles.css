@@ -519,6 +519,7 @@ body {
 }
 .page-footer .title {
   margin-bottom: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   color: inherit;
 }
@@ -539,10 +540,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-  /* щоб нічого не перекривало */
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -550,25 +549,20 @@ body {
 }
 .backdrop.is-hidden {
   opacity: 0;
-  /* щоб натискались кнопки та посилання, */
   visibility: hidden;
   pointer-events: none;
 }
-/* коли сховане  */
 .backdrop.is-hidden .modal {
   border-radius: 50%;
   background-color: var(--color-accent);
   transform: translate(100%, 100%) scale(2) rotate(720deg);
 }
-/* коли вже відкрите */
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-
   min-width: 528px;
   min-height: 581px;
-
   background-color: var(--color-bg-primary);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -587,7 +581,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: inherit;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
